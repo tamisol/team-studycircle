@@ -261,6 +261,11 @@ The final technologies will be agreed upon by the team before development begins
 ## 9. Team Collaboration
 
 The project will be developed by five team members using Git and GitHub.
+AKHIGBE KING MCDAVID 
+AJAH PATRICK 
+ALAYANDE MUZZAMIL
+AKINDOJU NIFEMI 
+AMAH MARVELLOUS
 
 GitHub will be used to:
 
