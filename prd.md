@@ -1,303 +1,201 @@
-# FindBack
+# StudyCircle – Order Requirements Document
 
-## 1. Project Overview
+**1. Product Overview**
 
-**FindBack** is a campus lost and found platform designed to help students find their lost belongings and return items they find on campus.
+StudyCircle is a platform that helps university students find and join study groups for the courses they are taking. Instead of searching through different WhatsApp groups or asking classmates for links, students can use StudyCircle to find relevant groups in one place.
 
-Students lose items such as phones, wallets, ID cards, books, chargers, keys, and other personal belongings. In most cases, they have to ask around, check different locations, or post in group chats to see if anyone has found their item. This can make the process of recovering a lost item difficult.
+The platform will allow students to discover groups based on their course, department and level, view basic information about a group, and join through the available group link.
 
-FindBack will provide one platform where students can report items they have lost or found. Other students can then search through the reports to see if an item they are looking for has been posted.
+**2. Problem Statement**
 
----
+Students often have difficulty finding active study groups for their courses. Group links are usually shared through friends, class representatives or different WhatsApp chats, which makes them easy to miss.
 
-## 2. Problem Statement
+There is also no simple way to know which study groups are available for a particular course or level.
 
-Students can lose personal belongings in different places around campus. When this happens, there is no single platform where they can easily report the item and check if someone else has found it.
+StudyCircle aims to make finding these groups easier by putting the information in one platform.
 
-Students usually have to rely on friends, class groups, WhatsApp groups, or physically search different locations.
+**3. Business Objectives**
 
-This can lead to:
+The main objectives of StudyCircle are to:
 
-- Students spending a lot of time looking for lost items.
-- Lost items remaining unclaimed.
-- Difficulty connecting the owner of an item with the person who found it.
-- Important belongings being permanently lost.
-- Lost and found information being spread across different platforms.
+- Make it easier for students to find study groups.
+- Reduce the time students spend searching for course-related groups.
+- Give students one place to discover study communities.
+- Encourage students to collaborate and learn together.
+- Create a platform that can be expanded to support more universities in the future.
 
-FindBack is intended to provide a simple and organized way for students to report and search for lost and found items.
+**4. Target Users**
 
----
+The main users of StudyCircle are university students.
 
-## 3. Proposed Solution
+Students will use the platform to:
 
-We propose to develop **FindBack**, a web-based lost and found platform for Babcock University students.
+- Find study groups for their courses.
+- Search and filter available groups.
+- View basic information about a group.
+- Join a study group through its link.
+- Create a study group if one does not already exist.
 
-Students will be able to register and log in using their matriculation numbers. After logging in, they can report an item as either **Lost** or **Found**.
+Administrators will manage the platform and make sure that group information is kept useful and appropriate.
 
-For a lost item, a student can provide information such as the item name, description, location where it was lost, date, category, and an image if available.
+**5. Stakeholders**
 
-A student who finds an item can provide similar information about where and when the item was found.
+The main stakeholders are:
 
-Other users can search through the reports and filter them by categories, locations, and dates. If a student believes they have found their lost item, they can contact the person who posted the report.
+- University students
+- Study group creators
+- Course representatives
+- Platform administrators
+- The development team
 
-An administrator will also be able to manage users and remove reports that are inappropriate, false, or no longer needed.
+**6. User Stories**
 
----
+As a student, I want to create an account so that I can use StudyCircle.
 
-## 4. Project Objectives
+As a student, I want to search for my course so that I can find relevant study groups.
 
-The main objectives of FindBack are to:
+As a student, I want to filter groups by course, department or level so that I can find what I need faster.
 
-- Create a central platform for lost and found items on campus.
-- Make it easier for students to report lost belongings.
-- Allow students to report items they find.
-- Make it easier to search for lost items.
-- Help connect students who have lost items with students who have found them.
-- Reduce the number of items that remain unclaimed.
-- Keep track of reported and recovered items.
-- Provide a simple and organized alternative to relying only on group chats and word of mouth.
+As a student, I want to see basic information about a study group before joining it.
 
----
+As a student, I want to join a study group through its link so that I can start studying with other students.
 
-## 5. Target Users
+As a student, I want to create a study group so that other students can find and join it.
 
-The platform will have two main types of users.
+As a student, I want to manage my profile so that my information is up to date.
 
-### Students
+As an administrator, I want to manage study groups so that incorrect or inappropriate information can be removed.
 
-Students will be able to:
+As an administrator, I want to manage users so that the platform remains safe and useful.
 
-- Create an account and log in.
-- Report lost items.
-- Report found items.
-- Add descriptions and images to reports.
-- Search for lost and found items.
-- Filter search results.
-- View the details of an item.
-- Contact the person who posted an item.
-- Update the status of their reports.
-- View their previous reports.
+**7. Functional Requirements**
 
-### Administrator
+The functional requirements describe what StudyCircle should be able to do.
 
-The administrator will be able to:
+**User Registration and Login**
 
-- Manage student accounts.
-- View lost and found reports.
-- Remove inappropriate or suspicious reports.
-- Review reports made by users.
-- Manage reported content.
-- Remove old or resolved posts when necessary.
-- Monitor the overall platform.
+- Students should be able to create an account.
+- Students should be able to log in and log out.
+- Users should be able to update their profile information.
 
----
+**Study Group Creation**
 
-## 6. Main Features
+- Students should be able to create a study group.
+- Users should be able to provide the course, department, level, description and group link.
+- Users should be able to edit information for groups they created.
 
-### 6.1 Student Registration and Login
+**Study Group Discovery**
 
-Students will register and log in using their matriculation numbers and other required information.
+- Students should be able to view available study groups.
+- Students should be able to search for groups by course or group name.
+- Students should be able to filter groups by course, department and level.
+- Students should be able to view basic information about a group before joining.
 
-The system should only allow registered users to access the main features of the platform.
+**Joining Study Groups**
 
-One of the challenges will be verifying that the matriculation number actually belongs to a current Babcock student.
+- Students should be able to access the provided group link.
+- The platform should direct students to the external study group where applicable.
 
-### 6.2 Report a Lost Item
+**Administration**
 
-A student who loses an item can create a lost item report.
+- Administrators should be able to view and manage users.
+- Administrators should be able to manage study groups.
+- Administrators should be able to remove inappropriate or incorrect group information.
 
-The report will contain information such as:
+**Notifications**
 
-- Item name.
-- Description.
-- Category.
-- Location where it was lost.
-- Date it was lost.
-- Additional identifying details.
-- Image of the item, if available.
+- Users should receive relevant updates about their study groups where applicable.
 
-### 6.3 Report a Found Item
+**Resource Sharing**
 
-A student who finds an item can create a found item report.
+- Users should be able to share useful study materials or resources related to their study groups.
 
-The report can include:
+**8. Non-Functional Requirements**
 
-- Item name.
-- Description.
-- Category.
-- Location where it was found.
-- Date it was found.
-- Additional information.
-- Image of the item, if available.
+The non-functional requirements describe how the platform should perform.
 
-### 6.4 Search and Filter
+**Usability**
 
-Students will be able to search for items using keywords.
+StudyCircle should have a simple and easy-to-understand interface so that students can find study groups without needing detailed instructions.
 
-They will also be able to filter reports by information such as:
+**Performance**
 
-- Category.
-- Location.
-- Date.
-- Lost or found status.
+The platform should load pages and search results within a reasonable amount of time.
 
-This will make it easier to find a possible match.
+**Security**
 
-### 6.5 Item Details
+User accounts and personal information should be protected. Administrative features should only be accessible to authorized users.
 
-Users will be able to view more information about a reported item, including:
+**Reliability**
 
-- Item name.
-- Description.
-- Image.
-- Location.
-- Date.
-- Status.
-- Information provided by the person who reported it.
+The platform should remain available and should not frequently fail when students are searching for or accessing study groups.
 
-### 6.6 Contact User
+**Responsiveness**
 
-If a student believes that a reported item belongs to them, they should be able to contact the person who made the report.
+The platform should work properly on both mobile phones and computers.
 
-The exact communication method will be decided during development.
+**Scalability**
 
-### 6.7 Item Status
+The system should be designed so that more students, courses and universities can be added in the future without major changes to the platform.
 
-Users will be able to update the status of their reports.
+**Maintainability**
 
-Possible statuses include:
+The code and system structure should be organized so that new features and updates can be added easily.
 
-- Lost
-- Found
-- Claimed
-- Returned
+**9. Scope and Priorities**
 
-For example, when a student gets their lost item back, they can mark the report as **Returned**.
+The first version of StudyCircle will focus on:
 
-### 6.8 User Dashboard
+- User registration and login
+- Student profiles
+- Creating study groups
+- Searching for study groups
+- Filtering groups by course, department and level
+- Viewing study group information
+- Joining groups through provided links
+- Basic administration
 
-Students will have a dashboard where they can see:
+Features that can be considered for future versions include:
 
-- Their lost item reports.
-- Their found item reports.
-- Active reports.
-- Resolved reports.
+- In-app messaging
+- Study session scheduling
+- Ratings or reviews for study groups
+- More advanced notifications
+- Gamification
+- Verifiable credentials for student contributions
 
-### 6.9 Admin Dashboard
+**10. Acceptance Criteria**
 
-The administrator will have a dashboard for managing the platform.
+The MVP will be considered successful if:
 
-The dashboard will allow the administrator to:
+- A student can create an account and log in successfully.
+- A student can create a study group with the required information.
+- A student can search for an existing study group.
+- A student can filter groups using available course or academic information.
+- A student can view the details of a study group.
+- A student can access the provided link to join a study group.
+- An administrator can manage users and study groups.
+- The platform works properly on both mobile and desktop screens.
 
-- View users.
-- View lost item reports.
-- View found item reports.
-- Remove inappropriate posts.
-- Review reported content.
-- Manage resolved or outdated reports.
+**11. Assumptions and Open Questions**
 
----
+**Assumptions**
 
-## 7. Possible Challenges
+- Students will have access to the internet when using the platform.
+- Study groups will mainly use external platforms such as WhatsApp for communication.
+- Users will provide accurate information when creating study groups.
+- Administrators will review reported or inappropriate content.
 
-### 7.1 Verifying Students
+**Open Questions**
 
-One of the main challenges will be making sure that people using FindBack are actually Babcock students.
+- Should students be required to verify their university identity?
+- Should study groups expire if they become inactive?
+- Who should be allowed to create public study groups?
+- Should students be able to report a study group?
+- Should the platform initially support one university or multiple universities?
 
-Students will register using their matriculation numbers, but simply entering a matriculation number may not be enough to confirm that the person is a current student.
+**12. MVP Priority**
 
-If access to an official university database is not available, an alternative verification method will need to be considered.
+The most important features for the first release are user authentication, study group creation, study group discovery, search and filtering, group information, and joining groups.
 
-### 7.2 Fake Reports
-
-A user could create a false lost or found item report.
-
-To deal with this, users should be able to report suspicious posts to the administrator. The administrator can then review the report and remove it if necessary.
-
-### 7.3 False Claims
-
-Someone could falsely claim that a found item belongs to them.
-
-To reduce this problem, users should not provide every identifying detail about valuable items in a public post. The person claiming the item can be asked to provide additional information to prove ownership.
-
-### 7.4 Finding Matching Items
-
-Different students may describe the same item in different ways.
-
-For example, one student might report a "black Apple phone" while another reports a "black iPhone."
-
-The search feature should therefore support keywords and categories to make it easier to find possible matches.
-
-### 7.5 User Privacy
-
-The platform will contain personal information belonging to students.
-
-The system should therefore protect user accounts and avoid displaying unnecessary personal information publicly.
-
-### 7.6 Old Reports
-
-Some items may never be recovered, while others may be returned to their owners.
-
-The platform will need a way to mark resolved reports and manage older posts so that users can focus on active reports.
-
----
-
-## 8. Technologies
-
-The technologies used will depend on what the team decides is most suitable for the project.
-
-Possible technologies include:
-
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Python, Java, Node.js, or another suitable technology
-- **Database:** MySQL, PostgreSQL, or another suitable database
-- **Version Control:** Git and GitHub
-- **Code Editor:** Visual Studio Code
-
-The final technologies will be agreed upon by the team before development begins.
-
----
-
-## 9. Team Collaboration
-
-The project will be developed by five team members using Git and GitHub.
-AKHIGBE KING MCDAVID 
-AJAH PATRICK 
-ALAYANDE MUZZAMIL
-AKINDOJU NIFEMI 
-AMAH MARVELLOUS
-
-GitHub will be used to:
-
-- Store the project code.
-- Track tasks.
-- Manage different versions of the project.
-- Create issues for tasks.
-- Review code through pull requests.
-- Keep track of project documentation.
-
-Each team member will be given specific tasks and will work on their own branch. After completing a task, the member will push their changes and create a pull request for the team to review before the changes are added to the main branch.
-
----
-
-## 10. Expected Outcome
-
-At the end of the project, we expect to have a working prototype of **FindBack** that allows Babcock students to report, search for, and manage lost and found items.
-
-Students should be able to create accounts, report lost or found items, search through reports, view item information, and contact other users when necessary.
-
-The administrator should be able to manage users and reports and remove inappropriate or suspicious content.
-
-The finished project should provide a simple solution to the problem of lost belongings on campus while giving the team practical experience in software development, databases, user authentication, Git, GitHub, and teamwork.
-
----
-
-## 11. Conclusion
-
-**FindBack** is intended to make the process of finding and recovering lost belongings on campus easier.
-
-Instead of students depending only on WhatsApp groups, friends, or physically searching around campus, they will have one platform where lost and found items can be reported and searched for.
-
-The project will include basic features such as student registration, lost and found reports, search and filtering, item status updates, user communication, and administration.
-
-Through this project, the team will also gain practical experience in planning, designing, developing, testing, and managing a software project collaboratively using GitHub.
+Other features can be added later once the basic platform is working properly.
